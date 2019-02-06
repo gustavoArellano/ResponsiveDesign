@@ -100,7 +100,7 @@
     color: white;
 }
 
-/* PROJECTS */
+/* PROJECTS SECTION */
 
 .projects {
     display: flex;
@@ -135,6 +135,74 @@
     width: 40%;
     align-self: flex-start;
 }
+
+/* CONTACTS SECTION */
+
+#contact {
+    display: flex;
+    justify-content: space-evenly;
+    padding: 50px;
+    background-color: rgb(78, 78, 78);
+}
+
+#contact h1 {
+    margin-bottom: 50px;
+    color: rgb(88, 180, 255);
+}
+
+#contact form {
+    display: flex;
+    flex-direction: column;
+}
+
+#contact form input, textarea {
+    padding: 10px;
+    border-radius: 10px;
+    margin-bottom: 5px;
+    outline: none;
+}
+
+button {
+    width: fit-content;
+    padding: 10px 20px;
+    border-radius: 10px;
+    margin: auto;
+    margin-top: 5px;
+    font-size: 14pt;
+    cursor: pointer;
+    background-color: rgb(88, 180, 255);
+    border: none;
+    outline: none;
+    box-shadow: 2px 2px 5px black;
+    transition: box-shadow 150ms, background-color 150ms, color 150ms;
+}
+
+button:active {
+    box-shadow: none;
+    background-color: rgb(75, 152, 214);
+    color: rgb(44, 44, 44);
+}
+
+#contact img {
+    height: 300px;
+    border-radius: 4px;
+    box-shadow: 2px 2px 6px black;
+}
+
+/* FOOTER STYLES */
+
+footer {
+    padding: 10px;
+    background-color: gray;
+}
+
+footer p {
+    width: fit-content;
+    margin-left: auto;
+    font-weight: bold;
+}
+
+
 
 /* media with max width of 480px is mobile size screen */
 @media only screen and (max-width: 480px) {
@@ -182,13 +250,17 @@
     }
 
     .proj2 {
-        width: 100%;
+
         flex-wrap: wrap-reverse;
     }
 
     .proj img {
         margin: auto;
         width: 100%;
+    }
+
+    #contact img {
+        display: none;
     }
 
 }
